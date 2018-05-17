@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="@android:dimen/thumbnail_height">
+
+    <ImageView
+        android:id="@+id/PlaceImage"
+        android:layout_width="@android:dimen/thumbnail_height"
+        android:layout_height="match_parent"
+        android:layout_marginTop="8dp"
+        android:contentDescription=""
+        android:scaleType="centerCrop"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@android:color/holo_red_light" />
+
+    <TextView
+        android:id="@+id/PlaceTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="8dp"
+        android:layout_marginStart="8dp"
+        android:paddingBottom="20dp"
+        android:paddingTop="15dp"
+        android:text=""
+        android:textColor="#333333"
+        android:textSize="24sp"
+        app:layout_constraintStart_toEndOf="@+id/PlaceImage" />
+
+    <TextView
+        android:id="@+id/PlaceAddress"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="8dp"
+        android:layout_marginStart="8dp"
+        android:text=""
+        app:layout_constraintStart_toEndOf="@+id/PlaceImage"
+        app:layout_constraintTop_toBottomOf="@+id/PlaceTitle" />
+</android.support.constraint.ConstraintLayout>
